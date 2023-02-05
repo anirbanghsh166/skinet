@@ -41,6 +41,8 @@ namespace API
 
             app.UseStaticFiles();
 
+            app.UseCors("CorsPolicy");
+
             app.UseAuthorization();
 
             app.UseSwaggerDocumentation();
